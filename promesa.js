@@ -1,3 +1,4 @@
+// 1° Ejemplo de promesa
 const contratarJugador = new Promise((resolve, reject) => {
   const contratado = true;
   if (contratado) resolve('El jugador se incorpora al equipo')
