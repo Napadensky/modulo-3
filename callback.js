@@ -1,4 +1,4 @@
-// 1° Ejemplo de callback hell
+// 1° Ejemplo de sin callback
 const lenguajes = ['Node', 'React', 'Java', 'Python', 'Ruby on Rails']
 function mostrarLenguajes() {
   setTimeout(() => {
@@ -6,16 +6,17 @@ function mostrarLenguajes() {
   }, 1000);
 }
 mostrarLenguajes()
+
+// 2° Ejemplo de con callback
 function nuevoLenguaje(lenguaje, callback) {
   setTimeout(() => {
-    lenguajes.push(lenguaje);
-    console.log('\n');
-    callback();
+      lenguajes.push(lenguaje);
+      callback();
   }, 2000);
-}
+} 
 nuevoLenguaje('Angular', mostrarLenguajes)
 
-// 2° Ejemplo de callback hell
+// 3° Ejemplo de callback hell
 const lenguajesAprendidos = []
 function agregarLenguajeAprendido(lenguaje, callback) {
   lenguajesAprendidos.push(lenguaje);
